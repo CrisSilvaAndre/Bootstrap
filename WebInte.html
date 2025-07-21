@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tienda</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="bg-primary text-white p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3">Mi Tienda</h1>
+      <nav>
+        <a href="#carousel" class="text-white me-3">Inicio</a>
+        <a href="#productos" class="text-white me-3">Productos</a>
+        <a href="#contacto" class="text-white">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--Carrusel de imágenes-->
+  <section id="carousel" class="mt-4 container">
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://media.istockphoto.com/id/1457889029/es/foto/grupo-de-alimentos-con-alto-contenido-de-fibra-diet%C3%A9tica-dispuestos-uno-al-lado-del-otro.jpg?s=612x612&w=0&k=20&c=fGmnVlAU6yDfG29kEMoNZg28DWA5I_CjprvK2L1HhT8=" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://abarrotero.com/wp-content/uploads/2019/04/productos_tienda_abarrotes_abarrotero.jpg" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://concepto.de/wp-content/uploads/2019/11/producto-e1572738586616-800x400.jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Tabla de productos -->
+  <section id="productos" class="container my-5">
+    <h2>Productos</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pan integral</td>
+          <td>$1.99</td>
+          <td>Pan integral ideal para aquellos que desean comer sano y saludable</td>
+        </tr>
+        <tr>
+          <td>Tomates cherry</td>
+          <td>$0.75</td>
+          <td>Tomatitos ideales para ensaladas o decorar tus platos preferidos.</td>
+        </tr>
+        <tr>
+          <td>Jamon entero</td>
+          <td>$5.00</td>
+          <td>Jamon premium entero para cualquier plato o sandwiches.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section id="contacto" class="container my-5">
+    <h2>Contacto</h2>
+    <form id="formularioContacto" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+        <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="correo" required>
+        <div class="invalid-feedback">Ingrese un correo electrónico válido.</div>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje o queja</label>
+        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        <div class="invalid-feedback">Por favor, escriba su mensaje.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botón de alerta -->
+  <div class="container text-center my-4">
+    <button id="botonAlerta" class="btn btn-warning">Haz clic para ver alerta</button>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>Contacto: tiendaonline@orig.com | Síguenos en redes sociales</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script4.js"></script>
+</body>
+</html>

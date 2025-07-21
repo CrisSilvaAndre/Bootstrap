@@ -1,0 +1,23 @@
+/* Estilo personalizado para destacar el encabezado */
+header {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+#botonAlerta {
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  #miCarrusel img {
+    height: 200px;
+    object-fit: cover;
+  }
+} 
+
+/* Estilo personalizado para tabla */
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
